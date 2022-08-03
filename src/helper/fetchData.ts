@@ -2,7 +2,7 @@ import React from 'react'
 import { ApiStatus } from '../types'
 import { dataMapper } from './dataMapper'
 
-const URLFirstChunk = 'https://inclusion-ch-server.herokuapp.com/https://api.factoryfour.com/'
+const URLFirstChunk = process.env.REACT_APP_URL_FIRST_CHUNK
 const URLLastChunk = process.env.REACT_APP_URL_LAST_CHUNK
 
 export function fetchApiData (
