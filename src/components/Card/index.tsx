@@ -24,10 +24,14 @@ export default function Card ({ endpoint }: Props) {
 
   useEffect(() => {
     fetchApiData(endpoint, setApiStatus)
-    setTimeout(() => {
+  }, [endpoint])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
       fetchApiData(endpoint, setApiStatus)
     }, timeoutValueInSeconds)
-  }, [endpoint])
+    return () => clearInterval(interval)
+  }, [endpoint, timeoutValueInSeconds])
 
   useEffect(() => {
     apiStatus.success === false &&
