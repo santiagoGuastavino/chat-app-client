@@ -27,6 +27,7 @@
 
   .topbar {
     width: 95vw;
+    height: 7vh;
     margin: 0 auto;
     border-radius: var(--border-radius);
     border: var(--border);
