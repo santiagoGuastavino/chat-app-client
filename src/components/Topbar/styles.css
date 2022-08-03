@@ -1,0 +1,48 @@
+.topbar-container {
+  height: 7vh;
+  width: 100vw;
+}
+
+.topbar {
+  height: 7vh;
+  width: 100vw;
+  background-color: var(--surface-1);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border-bottom: var(--border);
+  box-shadow: var(--box-shadow);
+}
+
+.topbar h2 {
+  padding: 0 var(--side-padding);
+}
+
+@media (min-width: 576px) {
+  .topbar-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .topbar {
+    width: 95vw;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    border: var(--border);
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  .topbar {
+    max-width: 1400px;
+  }
+}

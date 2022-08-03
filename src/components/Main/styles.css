@@ -1,0 +1,43 @@
+.main-container {
+  width: 100vw;
+}
+
+.main {
+  width: 100vw;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .main {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    height: 90vh; 
+  }
+
+  .main {
+    max-width: 1200px;
+  }
+}
