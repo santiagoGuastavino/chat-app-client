@@ -9,8 +9,6 @@ export function fetchApiData (
   apiToFetch: string,
   callback: React.Dispatch<React.SetStateAction<ApiStatus>>
 ) {
-  console.log(URLFirstChunk)
-  console.log(URLLastChunk)
   fetch(`${URLFirstChunk}${apiToFetch}${URLLastChunk}`)
     .then(res => {
       if (res.status !== 200) {
